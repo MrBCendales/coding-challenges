@@ -9,17 +9,14 @@ import numpy
 # Compute the sum along axis 0. Then, print the product of that sum.
 
 
+import numpy
+
 first_line= input()
-second_line = input()
-third_line = input()
 
 N, M = [int(x) for x in first_line.split()]
+data_array=[]
 
-for i in range(N-1):
-    input()
+for i in range(N):
+    data_array.append([int(x) for x in input().split()])
 
-data_array=[[int(x) for x in second_line.split()], [int(x) for x in third_line.split()]]
-
-
-
-print (numpy.prod(numpy.sum(data_array, axis = 0), axis=None))
+print (numpy.prod(numpy.sum(numpy.array(data_array), axis = 0)))
