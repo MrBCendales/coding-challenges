@@ -58,3 +58,29 @@ np_array = np.array(data_array)
 print(np.mean(np_array, axis = 1))
 print(np.var(np_array, axis = 0))
 print(round(np.std(np_array), 11))
+
+
+
+# Task
+# You are given two arrays A and B. Both have dimensions of NX.N.
+# Your task is to compute their matrix product.
+# Input Format
+# The first line contains the integer N.
+# The next IN lines contains IN space separated integers of array A.
+# The following N lines contains N space separated integers of array B.
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+N = int(input())
+A = []
+B = []
+
+for i in range(N):
+    A.append([int(x) for x in input().split()])
+for i in range(N):
+    B.append([int(x) for x in input().split()])
+    
+array_A = np.array(A)
+array_B = np.array(B)
+
+print(np.dot(array_A, array_B))
+            
