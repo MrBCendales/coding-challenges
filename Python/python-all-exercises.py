@@ -84,3 +84,20 @@ array_B = np.array(B)
 
 print(np.dot(array_A, array_B))
             
+
+# Task
+# You are given two arrays: A and B.
+# Your task is to compute their inner and outer product.
+# Input Format
+# The first line contains the space separated elements of array A
+# The second line contains the space separated elements of array B.
+# Output Format
+# First, print the inner product.
+# Second, print the outer product.
+
+A = np.array([int(x) for x in input().split()])
+B = np.array([int(x) for x in input().split()])
+
+print(np.inner(A, B))
+print(np.outer(A, B))
+
